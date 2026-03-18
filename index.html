@@ -2548,14 +2548,35 @@
       .pkg-tp {
         font-size: .64rem;
       }
+      
+      .hero-intro {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+      }
+      .hero-intro-content {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+      }
+      .hero-intro img {
+        height: 6rem; /* smaller logo on mobile */
+        transform: none;
+      }
+      .intro-btns {
+        justify-content: center;
+        width: 100%;
+      }
 
       /* Fix mobile font sizes for brand name and car titles to fit screen */
       .hero-intro h1 {
-        font-size: clamp(2.2rem, 9vw, 3rem);
-        line-height: 1.2;
+        font-size: 2.8rem;
+        line-height: 1.1;
       }
       .hero-intro h1 .hero-poppins-orange {
-        font-size: clamp(1.15rem, 5vw, 1.6rem);
+        font-size: 1.4rem;
       }
       .logo-text {
         font-size: 1rem;
