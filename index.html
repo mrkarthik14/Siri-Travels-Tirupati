@@ -780,9 +780,11 @@
       .hero-feature {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap; /* allow wrapping on very small screens */
         width: 100%;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 1rem; /* reduced gap */
+        padding: 0 1rem;
         position: absolute;
         bottom: 5%;
         top: auto;
@@ -795,6 +797,8 @@
 
       .hero-feature-item {
         align-items: center;
+        flex: 1 1 30%; /* allow items to grow/shrink, taking roughly a third of the width or wrapping */
+        min-width: 100px;
       }
     }
 
