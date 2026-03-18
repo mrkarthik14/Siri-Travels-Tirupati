@@ -778,8 +778,22 @@
 
     @media(max-width: 900px) {
       .hero-feature {
-        display: none;
-        /* Hide on small screens where car takes full width */
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+        position: absolute;
+        bottom: 5%;
+        top: auto;
+        transform: none;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center !important;
+        z-index: 10;
+      }
+      .hero-feature-item {
+        align-items: center;
       }
     }
 
