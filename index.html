@@ -794,7 +794,7 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
-        gap: 0.8rem; /* Space between details inside the block */
+        gap: 1.5rem; /* Increased space between details inside the block */
         padding: 0 1rem;
         text-align: center !important;
         transform: none;
@@ -802,12 +802,13 @@
         bottom: auto;
         left: auto !important;
         right: auto !important;
-        margin-bottom: 1.5rem; /* Space between left and right blocks */
+        margin-bottom: 2rem; /* Space after both feature blocks */
         z-index: 10;
       }
       
       .hero-feature.left {
         order: 2; /* Place immediately after car image */
+        margin-bottom: 2rem; /* Force a huge gap between Capacity and Rate */
       }
       .hero-feature.right {
         order: 3; /* Place last */
