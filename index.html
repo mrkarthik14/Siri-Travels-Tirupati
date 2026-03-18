@@ -590,7 +590,6 @@
       max-height: 800px;
       border-radius: 50%;
       background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
-      border: 1px solid rgba(255, 255, 255, 0.05);
       z-index: 0;
     }
 
@@ -777,23 +776,29 @@
 
     @media(max-width: 900px) {
       .car-frame {
-        padding-top: 15vh; /* Create space for the title above the car */
+        padding-top: 15vh;
+        /* Create space for the title above the car */
       }
-      
+
       .car-hero-img-box {
         position: relative;
-        order: 1; /* Place car image first in the column flow */
-        margin-bottom: 2rem; /* Add breathing room below car */
-        transform: translateY(0); /* Remove desktop Y shifting */
+        order: 1;
+        /* Place car image first in the column flow */
+        margin-bottom: 2rem;
+        /* Add breathing room below car */
+        transform: translateY(0);
+        /* Remove desktop Y shifting */
       }
 
       .hero-feature {
-        position: relative; /* Remove absolute overlap! */
+        position: relative;
+        /* Remove absolute overlap! */
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        gap: 1.5rem; /* Increased space between details inside the block */
+        gap: 1.5rem;
+        /* Increased space between details inside the block */
         padding: 0 1rem;
         text-align: center !important;
         transform: none;
@@ -801,16 +806,21 @@
         bottom: auto;
         left: auto !important;
         right: auto !important;
-        margin-bottom: 2rem; /* Space after both feature blocks */
+        margin-bottom: 2rem;
+        /* Space after both feature blocks */
         z-index: 10;
       }
-      
+
       .hero-feature.left {
-        order: 2; /* Place immediately after car image */
-        margin-bottom: 3.5rem !important; /* Force a huge gap between Capacity and Rate */
+        order: 2;
+        /* Place immediately after car image */
+        margin-bottom: 3.5rem !important;
+        /* Force a huge gap between Capacity and Rate */
       }
+
       .hero-feature.right {
-        order: 3; /* Place last */
+        order: 3;
+        /* Place last */
       }
 
       .hero-feature-item {
@@ -1678,36 +1688,39 @@
       background-image: url('QQQDADA Auto-Wandkunstdrucke, modernes Superautoposter, Rennwagen, ästhetisches Bild, Wanddekoration, Leinwand, Vintage-Kunst, Wandgemälde für Herren, Wohnzimmer, Flur, B, 20,3 x 25,4 cm, ung.jpg');
       background-size: cover;
       background-position: center;
-      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
     }
 
     .premium-fleet-container::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.3); /* Dark overlay for text contrast */
+      background: rgba(0, 0, 0, 0.3);
+      /* Dark overlay for text contrast */
     }
 
     .premium-fleet-card {
       position: relative;
       z-index: 1;
-      background: rgba(0, 0, 0, 0.25); /* Darker glass for contrast on bright image */
+      background: rgba(0, 0, 0, 0.25);
+      /* Darker glass for contrast on bright image */
       backdrop-filter: blur(12px) saturate(1.5);
       -webkit-backdrop-filter: blur(12px) saturate(1.5);
       border: 1.5px solid rgba(255, 255, 255, 0.2);
       border-radius: var(--radius-lg);
       padding: 3rem;
       max-width: 550px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
       text-align: center;
-      margin: 0 auto; /* Center the card */
+      margin: 0 auto;
+      /* Center the card */
     }
 
     .premium-fleet-title {
       font-family: var(--serif);
       font-size: 2.8rem;
       color: #fff;
-      text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
       margin-bottom: 1rem;
     }
 
@@ -3199,7 +3212,8 @@
       <div class="premium-fleet-container">
         <div class="premium-fleet-card">
           <h2 class="premium-fleet-title">Premium Fleet</h2>
-          <p class="premium-fleet-text">Experience luxury and performance with our exclusive selection of premium vehicles.</p>
+          <p class="premium-fleet-text">Experience luxury and performance with our exclusive selection of premium
+            vehicles.</p>
           <a href="#contact" class="btn-p">Inquire Now</a>
         </div>
       </div>
