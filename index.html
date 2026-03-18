@@ -778,12 +778,10 @@
 
     @media(max-width: 900px) {
       .hero-feature {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; /* allow wrapping on very small screens */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for rate/capacity */
         width: 100%;
-        justify-content: center;
-        gap: 1rem; /* reduced gap */
+        gap: 0.8rem;
         padding: 0 1rem;
         position: absolute;
         bottom: 5%;
@@ -797,8 +795,12 @@
 
       .hero-feature-item {
         align-items: center;
-        flex: 1 1 30%; /* allow items to grow/shrink, taking roughly a third of the width or wrapping */
-        min-width: 100px;
+      }
+
+      /* Make Driver Allowance take full width to prevent overlap */
+      .hero-feature-item:last-child {
+        grid-column: 1 / -1;
+        margin-top: 0.2rem;
       }
     }
 
