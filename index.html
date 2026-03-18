@@ -2548,6 +2548,29 @@
       .pkg-tp {
         font-size: .64rem;
       }
+
+      /* Fix mobile font sizes for brand name and car titles to fit screen */
+      .hero-intro h1 {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+        line-height: 1.2;
+      }
+      .hero-intro h1 .hero-poppins-orange {
+        font-size: clamp(1.15rem, 5vw, 1.6rem);
+      }
+      .logo-text {
+        font-size: 1rem;
+      }
+      .font-hycross, .font-innova, .font-dzire {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        transform: translateY(-5px);
+      }
+      .font-crysta {
+        font-size: clamp(1.8rem, 8vw, 3.2rem);
+      }
+      .font-tempo {
+        font-size: clamp(2.2rem, 10vw, 4rem);
+        transform: translateY(-10px);
+      }
     }
   </style>
 </head>
