@@ -778,13 +778,14 @@
 
     @media(max-width: 900px) {
       .hero-feature {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for rate/capacity */
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        gap: 0.8rem;
+        align-items: center;
+        gap: 0.5rem;
         padding: 0 1rem;
         position: absolute;
-        bottom: 5%;
+        bottom: 4%;
         top: auto;
         transform: none;
         left: 0 !important;
@@ -795,12 +796,6 @@
 
       .hero-feature-item {
         align-items: center;
-      }
-
-      /* Make Driver Allowance take full width to prevent overlap */
-      .hero-feature-item:last-child {
-        grid-column: 1 / -1;
-        margin-top: 0.2rem;
       }
     }
 
