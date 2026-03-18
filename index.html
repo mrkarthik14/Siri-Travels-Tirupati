@@ -785,13 +785,19 @@
         gap: 0.5rem;
         padding: 0 1rem;
         position: absolute;
-        bottom: 4%;
-        top: auto;
         transform: none;
         left: 0 !important;
         right: 0 !important;
         text-align: center !important;
         z-index: 10;
+      }
+      
+      /* Stack the two feature groups (left and right) on top of each other at the bottom */
+      .hero-feature.left {
+        bottom: 12%; /* higher up */
+      }
+      .hero-feature.right {
+        bottom: 4%; /* lower down */
       }
 
       .hero-feature-item {
