@@ -2548,49 +2548,53 @@
       .pkg-tp {
         font-size: .64rem;
       }
-      
+    }
+
+    /* ── MOBILE & TABLET HERO LAYOUT ── */
+    @media(max-width: 900px) {
       .hero-intro {
-        margin-left: 0;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 0 1rem;
+        margin-left: 0 !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        padding: 0 1rem !important;
       }
       .hero-intro-content {
-        flex-direction: column;
-        gap: 0.8rem;
-        margin-bottom: 1.5rem;
+        flex-direction: column !important;
+        gap: 0.8rem !important;
+        margin-bottom: 1.5rem !important;
       }
       .hero-intro img {
-        height: 6rem; /* smaller logo on mobile */
-        transform: none;
+        height: 6rem !important; /* smaller logo on mobile */
+        transform: none !important;
       }
       .intro-btns {
-        justify-content: center;
-        width: 100%;
+        justify-content: center !important;
+        width: 100% !important;
+        flex-wrap: wrap !important;
       }
 
       /* Fix mobile font sizes for brand name and car titles to fit screen */
       .hero-intro h1 {
-        font-size: 2.8rem;
-        line-height: 1.1;
+        font-size: clamp(2.2rem, 12vw, 4rem) !important;
+        line-height: 1.1 !important;
       }
       .hero-intro h1 .hero-poppins-orange {
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 6vw, 2rem) !important;
       }
       .logo-text {
-        font-size: 1rem;
+        font-size: 1rem !important;
       }
       .font-hycross, .font-innova, .font-dzire {
-        font-size: clamp(2rem, 9vw, 3.5rem);
-        transform: translateY(-5px);
+        font-size: clamp(2rem, 9vw, 3.5rem) !important;
+        transform: translateY(-5px) !important;
       }
       .font-crysta {
-        font-size: clamp(1.8rem, 8vw, 3.2rem);
+        font-size: clamp(1.8rem, 8vw, 3.2rem) !important;
       }
       .font-tempo {
-        font-size: clamp(2.2rem, 10vw, 4rem);
-        transform: translateY(-10px);
+        font-size: clamp(2.2rem, 10vw, 4rem) !important;
+        transform: translateY(-10px) !important;
       }
     }
   </style>
